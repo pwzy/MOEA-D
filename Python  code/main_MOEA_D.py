@@ -20,7 +20,7 @@ def main():
     nobjs = [2, 2, 2, 2, 2, 3, 3]  # 定义每个测试实例目标维度
 
     # 分别对7个实例进行测试（迭代7次）
-    for i in range(5,7):
+    for i in range(0,7):
 
         # 用来存储每个实例的名称
         strTestInstance = instances[i]
