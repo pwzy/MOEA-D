@@ -46,13 +46,13 @@ class TIndividual:     # 定义个体类
             if ind2.y_obj[n]<self.y_obj[n]:
                 dominated = False
                 return False
-        if ind2.y_obj[n] == self.y_obj[n]:
+        if ind2.y_obj == self.y_obj:
             dominated = False
             return False
         return dominated
     # 实现"=="运算符重载，实现每个个体的目标函数值的比较
     def  __eq__(self,ind2):
-        if ind2.y_obj[n] == self.y_obj[n]:
+        if ind2.y_obj == self.y_obj:
             return True
         else:
             return False
